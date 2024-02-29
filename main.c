@@ -31,7 +31,7 @@
             getchar();
             gets(T[size].statut);
             printf("entree la valeur du deadline :");
-            scanf("%d\%d\%d",&T[size].A.jour,&T[size].A.mois,&T[size].A.annee);
+            scanf("%d/%d/%d",&T[size].A.jour,&T[size].A.mois,&T[size].A.annee);
             T[size].id = size+1;
             size++;
             printf("------------------------------------------------\n");
@@ -123,7 +123,7 @@ void SupprimerTask() {
             T[j] = T[j + 1];
         }
         size--; // Réduisez la taille du tableau pour refléter la suppression
-        printf("Tâche avec l'identifiant supprimée avec succès!\n");
+        printf("Tache avec l'identifiant supprimée avec succès!\n");
         break;
         }
     }
@@ -256,3 +256,5 @@ int main()
         }while(choice!=8);
         return 0;
     }
+
+
